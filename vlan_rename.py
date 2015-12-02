@@ -6,6 +6,6 @@ from cli import *
 if __name__ == '__main__':
 
 for vlan in range(10,20):
-	cmdtext = 'config t ; ' + 'vlan ' + str(vlan) + ' ; ' + 'name ' + vlan_names[10-vlan] + ' ; '
-	print cmdtext
-    # cli(cmdtext)
+    cmdtext = 'config t ; ' + 'vlan ' + str(vlan) + ' ; ' + 'name ' + vlan_names[10-vlan] + ' ; '
+    print cmdtext
+    cli(cmdtext)
